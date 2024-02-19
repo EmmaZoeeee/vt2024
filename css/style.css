@@ -1,1 +1,99 @@
-/* Denna fil skall innehålla din CSS kod */
+#home {
+    display: grid;
+    margin: auto;
+    background-color: rgb(78, 112, 92);
+    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-areas: 
+    'na na'
+    'hd hd'
+    'as as'
+    'ft ft'
+    ;
+}
+
+#art {
+    display: grid;
+    margin: auto;
+    background-color: rgb(78, 112, 92);
+    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-areas: 
+    'na na'
+    'hd hd'
+    'as as'
+    'ft ft'
+    ;
+}
+
+#portfolio {
+    display: grid;
+    margin: auto;
+    background-color: rgb(78, 112, 92);
+    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-areas: 
+    'na na'
+    'hd hd'
+    'as as'
+    'ft ft'
+    ;
+}
+
+#contact {
+    display: grid;
+    margin: auto;
+    background-color: rgb(78, 112, 92);
+    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-areas: 
+    'na na'
+    'hd hd'
+    'as as'
+    'ft ft'
+    ;
+}
+
+
+
+
+
+
+
+nav {
+grid-area: na;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+height: 50px;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(220, 255, 236);  
+}
+
+header {
+    background-color: aquamarine;
+    grid-area: hd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    background-color: blue ;
+    grid-area: sc;
+    width: 150px;
+    height: 200px;
+}
+
+aside {
+    background-color: burlywood;
+    grid-area: as;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
