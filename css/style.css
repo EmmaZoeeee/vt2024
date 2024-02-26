@@ -85,6 +85,8 @@ header {
     flex-direction: column;
     background-color: rgb(127, 173, 146);
     width: 120%;
+    border: solid 7px rgb(220, 255, 236);
+    border-style:double;
 }
 
 header p {
@@ -99,7 +101,8 @@ section {
     width: 299px;
     height: 200px;
     border-radius: 100pt 100pt 0pt 0pt;
-    border: solid 2px rgb(220, 255, 236);
+    border: solid 7px rgb(220, 255, 236);
+    border-style: double;
 }
 
 #mig {
