@@ -2,12 +2,13 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
     grid-template-areas: 
     'na na'
-    'hd hd'
+    'hd sc'
     'as as'
     'ft ft'
+    'sg sg'
     ;
 }
 
@@ -15,12 +16,13 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
     grid-template-areas: 
     'na na'
     'hd hd'
     'as as'
     'ft ft'
+    'sg sg'
     ;
 }
 
@@ -28,12 +30,13 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
     grid-template-areas: 
     'na na'
     'hd hd'
     'as as'
     'ft ft'
+    'sg sg'
     ;
 }
 
@@ -41,12 +44,13 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
     grid-template-areas: 
     'na na'
     'hd hd'
     'as as'
     'ft ft'
+    'sg sg'
     ;
 }
 
@@ -72,23 +76,46 @@ a {
 }
 
 header {
-    background-color: aquamarine;
+    font-size:xxx-large;
+    font-style: italic;
     grid-area: hd;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: rgb(127, 173, 146);
+    width: 120%;
+}
+
+header p {
+    font-size: 14pt;
+    font-style: normal;
+    color: rgb(220, 255, 236);
+    
 }
 
 section {
-    background-color: blue ;
     grid-area: sc;
-    width: 150px;
+    width: 299px;
     height: 200px;
+    border-radius: 100pt 100pt 0pt 0pt;
+    border: solid 2px rgb(220, 255, 236);
+}
+
+#mig {
+    height: 200px;
+    border-radius: 100pt 100pt 0pt 0pt;
+    display: grid;
 }
 
 aside {
-    background-color: burlywood;
     grid-area: as;
+    display: flex;
+    justify-content: center;
+}
+
+#ghibli {
+    height: 357px;
 }
 
 footer {
@@ -96,4 +123,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#signatur {
+    grid-area: sg;
+    display: flex;
+    justify-content: center;
+    border: solid 3px black;
 }
