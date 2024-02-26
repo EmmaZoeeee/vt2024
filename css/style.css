@@ -85,6 +85,7 @@ header {
     flex-direction: column;
     background-color: rgb(127, 173, 146);
     width: 120%;
+    height: 250px;
     border: solid 7px rgb(220, 255, 236);
     border-style:double;
 }
