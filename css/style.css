@@ -75,16 +75,25 @@ a {
   color: rgb(220, 255, 236);  
 }
 
+#rubrik {
+    grid-area: hd;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 60px;
+}
+
 header {
     font-size:xxx-large;
     font-style: italic;
-    grid-area: hd;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: rgb(127, 173, 146);
-    width: 120%;
+    width: 400px;
     height: 250px;
     border: solid 7px rgb(220, 255, 236);
     border-style:double;
@@ -94,16 +103,17 @@ header p {
     font-size: 14pt;
     font-style: normal;
     color: rgb(220, 255, 236);
-    
+    margin: 1px;
 }
 
 section {
-    grid-area: sc;
     width: 299px;
     height: 200px;
     border-radius: 100pt 100pt 0pt 0pt;
     border: solid 7px rgb(220, 255, 236);
     border-style: double;
+    position: relative;
+    left: -70px;
 }
 
 #mig {
