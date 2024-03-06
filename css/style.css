@@ -16,11 +16,10 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
+    grid-template-rows: 1fr 20fr 1fr 2fr;
     grid-template-areas: 
     'na na'
-    'hd hd'
-    'as as'
+    'ma ma'
     'ft ft'
     'sg sg'
     ;
@@ -144,4 +143,36 @@ footer {
     display: flex;
     justify-content: center;
     border: solid 3px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myart {
+    grid-area: ma;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2px;
+    justify-content: center;
+    flex-direction: column;
+    height: 1200px;
+    width: 60x;
+}
+
+.box {
+    border: solid 1px black;
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    width: 250px;
 }
