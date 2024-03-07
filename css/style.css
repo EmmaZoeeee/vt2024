@@ -5,7 +5,7 @@
     grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
     grid-template-areas: 
     'na na'
-    'hd sc'
+    'hd hd'
     'as as'
     'ft ft'
     'sg sg'
@@ -16,7 +16,7 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 20fr 1fr 2fr;
+    grid-template-rows: 1fr 12fr 1fr 2fr;
     grid-template-areas: 
     'na na'
     'ma ma'
@@ -77,11 +77,9 @@ a {
 #rubrik {
     grid-area: hd;
     display: flex;
-    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 60px;
+    width: 100%;
 }
 
 header {
@@ -125,10 +123,22 @@ aside {
     grid-area: as;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 #ghibli {
     height: 357px;
+    width: 100%;
+    background-image: url(../img/ghibli.jpg);
+    background-size: cover;
+}
+
+#bat {
+    height: 357px;
+    width: 100%;
+    background-image: url(../img/båt.jpg);
+    background-size: cover;
+    background-position-x: center;
 }
 
 footer {
@@ -142,7 +152,6 @@ footer {
     grid-area: sg;
     display: flex;
     justify-content: center;
-    border: solid 3px black;
 }
 
 
@@ -163,16 +172,16 @@ footer {
     grid-area: ma;
     display: flex;
     flex-wrap: wrap;
-    gap:2px;
+    align-content: center;
     justify-content: center;
-    flex-direction: column;
-    height: 1200px;
-    width: 60x;
+    width: 100%;
+    border: solid;
 }
 
-.box {
-    border: solid 1px black;
+#myart article {
+    display: block;
     background-color: rgb(255, 255, 255);
     height: 250px;
     width: 250px;
+    margin: 3px;
 }
