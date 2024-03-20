@@ -136,7 +136,7 @@ aside {
 #bat {
     height: 357px;
     width: 100%;
-    background-image: url(../img/båt.jpg);
+    background-image: url(../img/båt2.jpg);
     background-size: cover;
     background-position-x: center;
 }
@@ -184,4 +184,53 @@ footer {
     height: 250px;
     width: 250px;
     margin: 3px;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: black;
+    }
+
+    header {
+        position: relative;
+    }
+
+    #hamburger {
+        height: 1.5rem;
+        width: 2.2rem;
+        position: absolute;
+        top:1.7rem;
+        right:0.7rem;
+    }
+
+    #hamburger div {
+        border: 1.5px solid black;
+        background-color: #000;
+        margin: 0.3rem;
+    }
+
+    nav {
+        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    nav.active {
+        max-height: 1000px;
+        transition: max-height 1s;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(161, 199, 216);
+    }
 }
