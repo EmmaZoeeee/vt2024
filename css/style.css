@@ -16,9 +16,10 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 12fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 7fr 1fr 2fr;
     grid-template-areas: 
     'na na'
+    'maa maa'
     'ma ma'
     'ft ft'
     'sg sg'
@@ -29,11 +30,11 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
     grid-template-areas: 
     'na na'
-    'hd hd'
-    'as as'
+    'pn pn'
+    'pad pad'
     'ft ft'
     'sg sg'
     ;
@@ -43,11 +44,12 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 5fr 6fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr 2fr;
     grid-template-areas: 
     'na na'
-    'hd hd'
-    'as as'
+    'cmh cmh'
+    'cma cma'
+    'cmad cmad'
     'ft ft'
     'sg sg'
     ;
@@ -164,9 +166,59 @@ footer {
 
 
 
+#contactmeheader {
+    grid-area: cmh;
+    background-color: rgb(220, 255, 236, 40%);
+    border: solid 7px rgb(255, 255, 255);
+    border-style: double;
+    height: 75px;
+    width: 500px;
+   display: grid;
+   position: relative;
+   right: -20%;
+   font-size:xx-large;
+   font-style: italic;
+   color: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+}
+
+#contactmeaside {
+    grid-area: cma;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cmaside {
+    grid-area: cmad;
+    background-color: teal;
+}
 
 
 
+
+
+
+
+
+#myartaside {
+    grid-area: maa;
+    background-color: rgb(255, 255, 255,40%);
+    width: 500px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    font-size:xx-large;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    border: solid 7px rgb(255, 255, 255);
+    border-style: double;
+    position: relative;
+    right: -20%;
+}
 
 #myart {
     grid-area: ma;
@@ -175,7 +227,6 @@ footer {
     align-content: center;
     justify-content: center;
     width: 100%;
-    border: solid;
 }
 
 #myart article {
@@ -185,6 +236,44 @@ footer {
     width: 250px;
     margin: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+#portfolionav {
+    grid-area: pn;
+    background-color: rgb(255, 255, 255,40%);
+    width: 500px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    font-size:xx-large;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    border: solid 7px rgb(255, 255, 255);
+    border-style: double;
+    position: relative;
+    right: -20%;
+}
+
+#portfolioas {
+    grid-area: pad;
+    background-color: teal;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:600px) {
     body {
