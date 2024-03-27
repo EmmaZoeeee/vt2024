@@ -250,6 +250,40 @@ footer {
     margin-top: 20px;
 }
 
+#myart article:hover {
+   opacity: 50%;
+}
+
+#box1 {
+    background-image:url(../img/blommor.JPG);
+    background-size: cover;
+}
+
+#box2{
+    background-image:url(../img/blommor.JPG);
+    background-size: cover;
+}
+
+#box3{
+    background-image:url(../img/blommor.JPG);
+    background-size: cover;
+}
+
+#box4{
+    background-image:url(../img/blommor.JPG);
+    background-size: cover;
+}
+
+#box5{
+    background-image:url(../img/blommor.JPG);
+    background-size: cover;
+}
+
+#box6{
+    background-image:url(../img/blommor.JPG);
+    background-size: cover;
+}
+
 
 
 
