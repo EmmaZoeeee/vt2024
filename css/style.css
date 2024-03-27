@@ -16,7 +16,7 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 1fr 7fr 1fr 2fr;
+    /* grid-template-rows: 1fr 1fr 7fr 1fr 2fr; */
     grid-template-areas: 
     'na na'
     'maa maa'
@@ -30,11 +30,12 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
+    /* grid-template-rows: 1fr 1fr 2fr 1fr 2fr; */
     grid-template-areas: 
     'na na'
     'pn pn'
     'pad pad'
+    'pft pft'
     'ft ft'
     'sg sg'
     ;
@@ -44,7 +45,7 @@
     display: grid;
     margin: auto;
     background-color: rgb(78, 112, 92);
-    grid-template-rows: 1fr 1fr 2fr 2fr 1fr 2fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr; */
     grid-template-areas: 
     'na na'
     'cmh cmh'
@@ -68,7 +69,7 @@ flex-direction: row;
 justify-content: space-around;
 align-items: center;
 height: 50px;
-
+margin: 10px;
 }
 
 a {
@@ -148,6 +149,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
 }
 
 #signatur {
@@ -174,13 +176,14 @@ footer {
     height: 75px;
     width: 500px;
    display: grid;
-   position: relative;
-   right: -20%;
    font-size:xx-large;
    font-style: italic;
    color: rgb(255, 255, 255);
    display: flex;
    align-items: center;
+   margin: auto;
+   border-top-left-radius: 60pt;
+   border-bottom-right-radius: 60pt;
 }
 
 #contactmeaside {
@@ -190,12 +193,20 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
 }
 
 #cmaside {
     grid-area: cmad;
-    background-color: teal;
 }
+
+#cmaside img {
+   
+    background-color: teal;
+    width: 100%;
+}
+
 
 
 
@@ -216,8 +227,9 @@ footer {
     color: rgb(255, 255, 255);
     border: solid 7px rgb(255, 255, 255);
     border-style: double;
-    position: relative;
-    right: -20%;
+    margin: auto;
+    border-top-left-radius: 60pt;
+    border-bottom-right-radius: 60pt;
 }
 
 #myart {
@@ -234,7 +246,8 @@ footer {
     background-color: rgb(255, 255, 255);
     height: 250px;
     width: 250px;
-    margin: 3px;
+    margin: 2px;
+    margin-top: 20px;
 }
 
 
@@ -258,13 +271,33 @@ footer {
     color: rgb(255, 255, 255);
     border: solid 7px rgb(255, 255, 255);
     border-style: double;
-    position: relative;
-    right: -20%;
+  margin: auto;
+  border-top-left-radius: 60pt;
+  border-bottom-right-radius: 60pt;
 }
 
 #portfolioas {
     grid-area: pad;
-    background-color: teal;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 96%;
+}
+
+#portfolioas p {
+    margin: 20px;
+}
+
+#portfoliofootage {
+    grid-area: pft;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfoliofootage img {
+    width: 100%;
 }
 
 
